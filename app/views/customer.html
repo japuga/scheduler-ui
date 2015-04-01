@@ -1,4 +1,7 @@
-<div ng-controller="CustomerSearchController as ctrl">
+<!--
+<div ng-controller="CustomerSearchController"> 
+ -->
+<div >
 <div >
 	<h2 class="well well-sm" id="app-heading">
 		Search
@@ -17,7 +20,7 @@
   </h2>
 
   <ul class="list-unstyled" id="items-list">
-      <li class="col-md-4" ng-repeat="customer in ctrl.customers">
+      <li class="col-md-4" ng-repeat="customer in customers">
           <div class="row">
           
           <!-- 
@@ -26,7 +29,7 @@
               </div>
                -->
               <div class="product-description-holder col-xs-12">
-                  <h2><a href="javascript:void(0)">{{ customer.firstName }} {{ customer.lasttName }}</a></h2>
+                  <h3><a href="javascript:void(0)">{{ customer.firstName }} {{ customer.lastName }}</a></h3>
                   <p>{{ customer.address }}</p>
               </div>
           </div>

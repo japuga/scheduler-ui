@@ -11,11 +11,13 @@
 	
 	var CustomerSearchController = function ($scope) {
 			$scope.customers = [{
-				firstName :'Juan',
-				lastName : 'Puente'
+				"firstName" :"Juan",
+				"lastName" : "Puente",
+				"address" : "Conocoto 125 y la Ria" 
 			}, {
-				firstName: 'Pablo',
-				lastName: 'Vergara'
+				"firstName": "Pablo",
+				"lastName": "Vergara",
+				"address" : "Plaza Argentina entre Brazil y Chile"
 			}];
 		};
 
