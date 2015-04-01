@@ -1,0 +1,38 @@
+<div ng-controller="CustomerSearchController as ctrl">
+<div >
+	<h2 class="well well-sm" id="app-heading">
+		Search
+	</h2>
+	<form>
+		<label>First Name</label><input type="text">
+		<label>LastName</label><input type="text">
+		<input type="submit" ng-href="#/search">
+	</form>
+</div>
+<!-- Start of Customer List -->
+<div>
+
+ <h2 class="well well-sm" id="app-heading">
+      Customer List
+  </h2>
+
+  <ul class="list-unstyled" id="items-list">
+      <li class="col-md-4" ng-repeat="customer in ctrl.customers">
+          <div class="row">
+          
+          <!-- 
+              <div class="col-xs-4">
+                  <a href="javascript:void(0)"><img ng-src="images/{{ product.thumb }}" alt="" class="img-responsive"></a>
+              </div>
+               -->
+              <div class="product-description-holder col-xs-12">
+                  <h2><a href="javascript:void(0)">{{ customer.firstName }} {{ customer.lasttName }}</a></h2>
+                  <p>{{ customer.address }}</p>
+              </div>
+          </div>
+      </li>
+  </ul>
+  
+</div>
+<!--  End of Customer List -->
+</div>
