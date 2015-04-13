@@ -1,0 +1,43 @@
+<div >
+<div class="container">
+	<h3 class="well well-sm" id="app-heading">
+		Customer Locations
+	</h3>
+	<div class="row">
+		<div class="col-md-4">
+			<label>Location Name</label>
+		</div>
+		<div class="col-md-8">
+			<a ng-href="#/appointments/{{locations[0].locationId}}" >{{ locations[0].locationName}}</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<label>Address</label>
+		</div>
+		<div class="col-md-8">
+			{{ locations[0].addressLine1}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<label>City</label>
+		</div>
+		<div class="col-md-8">
+			{{ locations[0].city}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<label>Zip</label>
+		</div>
+		<div class="col-md-8">
+			{{ locations[0].zip}}
+		</div>
+	</div>
+	
+	<h4 class="well well-sm" id="app-heading">
+		Appointments
+	</h4>
+	
+</div>

@@ -1,13 +1,16 @@
 [{
+	"customerId" : "101",
 	"firstName" : "Pedro",
 	"lastName" : "Jimenez",
 	"address" : "Dallas Texas"
 },{
+	"customerId" : "102",
 	"firstName" : "Denzel",
 	"lastName" : "Washington",
 	"address" : "3213 Malibu Road"
 	
 },{
+	"customerId" : "103",
 	"firstName" : "Taylor",
 	"lastName" : "Swift",
 	"address" : "4123 Pink Lemonade St"

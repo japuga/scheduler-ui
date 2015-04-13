@@ -23,6 +23,17 @@
 					controller: 'CustomerSearchController'
 					
 				})
+				.when('/customer/:customerId', {
+					templateUrl: 'views/customerDetail.html',
+					controller: 'CustomerController'
+					
+				})
+				.when('/appointments/:locationId', {
+					templateUrl: 'views/appointments.html',
+					controller: 'AppointmentsController'
+					
+				})
+
 				.otherwise({
 					redirectTo: '/'
 				});

@@ -1,0 +1,22 @@
+[
+{
+	"locationId" : "401",
+	"customerId" : "101",
+	"locationName" : "Homestead",
+	"addressLine1" : "3241 North Hill Dr",
+	"addressLine2" : " ",
+	"city" : "Plano",
+	"zip" : "75234"
+},
+
+{
+	"locationId" : "402",
+	"customerId" : "101",
+	"locationName" : "Mom House",
+	"addressLine1" : "1399 Jefferson Ln",
+	"addressLine2" : " ",
+	"city" : "Frsico",
+	"zip" : "75244"
+}
+
+]
