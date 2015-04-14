@@ -9,10 +9,14 @@
 	 *
 	 * Main module of the application.
 	 */
-	angular
-		.module('scheduler', 
-			['ngRoute']).
-			config(function ($routeProvider) {
+	var scheduler = angular.module('scheduler',	['ngRoute']);
+	
+	scheduler.config(['$httpProvider', function ($httpProvider) {
+	    $httpProvider.defaults.useXDomain = true;
+	    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+	}]);
+	
+	scheduler.config(function ($routeProvider) {
 				$routeProvider
 				.when('/', {
 					templateUrl: 'views/main.html',
@@ -28,12 +32,13 @@
 					controller: 'CustomerController'
 					
 				})
+				/*
 				.when('/appointments/:locationId', {
 					templateUrl: 'views/appointments.html',
 					controller: 'AppointmentsController'
 					
 				})
-
+*/
 				.otherwise({
 					redirectTo: '/'
 				});

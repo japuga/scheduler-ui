@@ -3,12 +3,17 @@
 	<h3 class="well well-sm" id="app-heading">
 		Customer Locations
 	</h3>
+	
+	<div ng-repeat="location in locations">
 	<div class="row">
 		<div class="col-md-4">
 			<label>Location Name</label>
 		</div>
 		<div class="col-md-8">
+			<a href="" ng-click="selectAppointment(location.locationId)"  >{{ location.locationName}}</a>
+			<!-- 
 			<a ng-href="#/appointments/{{locations[0].locationId}}" >{{ locations[0].locationName}}</a>
+			 -->
 		</div>
 	</div>
 	<div class="row">
@@ -16,7 +21,7 @@
 			<label>Address</label>
 		</div>
 		<div class="col-md-8">
-			{{ locations[0].addressLine1}}
+			{{ location.addressLine1}}
 		</div>
 	</div>
 	<div class="row">
@@ -24,7 +29,7 @@
 			<label>City</label>
 		</div>
 		<div class="col-md-8">
-			{{ locations[0].city}}
+			{{ location.city}}
 		</div>
 	</div>
 	<div class="row">
@@ -32,12 +37,33 @@
 			<label>Zip</label>
 		</div>
 		<div class="col-md-8">
-			{{ locations[0].zip}}
+			{{ location.zip}}
 		</div>
 	</div>
+	</div>
+	
+	
+	
 	
 	<h4 class="well well-sm" id="app-heading">
 		Appointments
 	</h4>
-	
+	<div class="jumbotron">
+	<div class="row">
+		<div class="col-md-2">Date</div>
+		<div class="col-md-2">Completed Date</div>
+		<div class="col-md-4">Group</div>
+		<div class="col-md-2">Confirmed</div>
+		<div class="col-md-2">Price</div>
+	</div>
+	<div ng-repeat="appt in appointments">
+		<div class="row">
+			<div class="col-md-2">{{ appt.apptDate }}</div>
+			<div class="col-md-2">{{ appt.apptCompletedDate }}</div>
+			<div class="col-md-4">{{ appt.groupAssigned }}</div>
+			<div class="col-md-2">{{ appt.confirmed }}</div>
+			<div class="col-md-2">{{ appt.price }}</div>
+		</div>
+	</div>
+	</div>
 </div>

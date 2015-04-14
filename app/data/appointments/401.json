@@ -1,0 +1,19 @@
+[
+{ 
+	"apptId" : "4011",
+	"apptDate" : "01/01/2015",
+	"apptCompletedDate" :  "01/02/2015",
+	"confirmed" : "Yes",
+	"groupAssigned" : "Group1",
+	"price" : "100.00"
+},
+
+{ 
+	"apptId" : "4012",
+	"apptDate" : "02/01/2015",
+	"apptCompletedDate" :  "02/01/2015",
+	"confirmed" : "Yes",
+	"groupAssigned" : "Group1",
+	"price" : "120.00"
+}
+]
